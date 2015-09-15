@@ -1,14 +1,14 @@
 'use strict';
 
-var demoApp = angular.module('demoApp', ['ngRoute']);
+var app = angular.module('app', ['ngRoute']);
 
-demoApp.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
     templateUrl: 'partials/home.html',
     controller: 'HomeCtrl'
   });
 }]);
 
-demoApp.controller('HomeCtrl', ['$scope', function($scope) {
+app.controller('HomeCtrl', ['$scope', function($scope) {
   $scope.value = "foo";
 }]);
