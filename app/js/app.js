@@ -1,17 +1,17 @@
 'use strict';
 
 angular
-  .module('app')
+  .module('app', ['ngRoute'])
   .config(['$routeProvider', config]);
 
 function config($routeProvider) {
   $routeProvider
     .when('/', {
       controller: 'HomeController',
-      templateUrl: 'home/home.html'
+      templateUrl: 'partials/home.html'
     })
     .when('/about', {
       controller: 'AboutController',
-      templateUrl: 'about/about.html'
+      templateUrl: 'partials/about.html'
     });
 }
