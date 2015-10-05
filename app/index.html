@@ -4,15 +4,16 @@
   <meta charset="utf-8">
   <title>AngularJS demo</title>
   <meta name="description" content="Example webapp demonstrating AngularJS">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="app.css">
 </head>
 <body>
   <h1>AngularJS demo</h1>
   <div ng-view></div>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controllers/homeController.js"></script>
-  <script src="js/controllers/aboutController.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="home/home.controller.js"></script>
+  <script src="about/about.controller.js"></script>
 </body>
 </html>
