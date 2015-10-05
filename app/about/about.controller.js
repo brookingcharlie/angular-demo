@@ -1,9 +1,9 @@
 'use strict';
 
 angular
-  .module('app')
+  .module('app.about')
   .controller('AboutController', ['$scope', AboutController]);
 
 function AboutController($scope) {
-  $scope.value = "foo";
+  $scope.value = "bar";
 }

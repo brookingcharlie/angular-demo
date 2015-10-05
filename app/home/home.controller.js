@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('app')
+  .module('app.home')
   .controller('HomeController', ['$scope', HomeController]);
 
 function HomeController($scope) {
