@@ -1,7 +1,9 @@
 'use strict';
 
 angular
-  .module('app.home', [])
+  .module('app.home', [
+    'ngRoute'
+  ])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
