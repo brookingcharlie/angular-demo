@@ -8,6 +8,7 @@ angular
     $routeProvider
       .when('/about', {
         controller: 'AboutController',
+        controllerAs: 'controller',
         templateUrl: 'about/about.html'
       });
   }]);
