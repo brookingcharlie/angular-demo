@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" app-navbar>
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">AngularJS demo</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#/">Home</a></li>
-          <li><a href="#/about">About</a></li>
+          <li><a href="#!/">Home</a></li>
+          <li><a href="#!/about">About</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -35,5 +35,7 @@
   <script src="about/about-controller.js"></script>
   <script src="components/helloworld/helloworld.js"></script>
   <script src="components/helloworld/helloworld-directive.js"></script>
+  <script src="components/navbar/navbar.js"></script>
+  <script src="components/navbar/navbar-directive.js"></script>
 </body>
 </html>

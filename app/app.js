@@ -5,8 +5,10 @@ angular
     'ngRoute',
     'app.home',
     'app.about',
-    'app.helloworld'
+    'app.helloworld',
+    'app.navbar'
   ])
-  .config(['$routeProvider', function($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.otherwise({redirectTo: '/'});
+    $locationProvider.hashPrefix("!");
   }]);
