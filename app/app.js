@@ -6,7 +6,8 @@ angular
     'app.home',
     'app.about',
     'app.helloworld',
-    'app.navbar'
+    'app.navbar',
+    'app.tabs'
   ])
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.otherwise({redirectTo: '/'});
