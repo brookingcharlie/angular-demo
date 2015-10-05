@@ -2,7 +2,7 @@
 
 angular
   .module('app.helloworld')
-  .directive('helloWorld', [function() {
+  .directive('appHelloWorld', [function() {
     return {
       restrict: 'E',
       scope: {
