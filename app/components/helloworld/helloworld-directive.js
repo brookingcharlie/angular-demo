@@ -5,7 +5,10 @@ angular
   .directive('helloWorld', [function() {
     return {
       restrict: 'E',
-      scope: true,
-      template: '<input ng-model="value" /> contains "{{value}}".'
+      scope: {
+        oneWayValue: '@',
+        twoWayValue: '='
+      },
+      templateUrl: 'components/helloworld/helloworld-directive.html'
     };
   }]);
