@@ -2,8 +2,6 @@
 
 angular
   .module('app.about')
-  .controller('AboutController', ['$scope', AboutController]);
-
-function AboutController($scope) {
-  $scope.value = "bar";
-}
+  .controller('AboutController', ['$scope', function($scope) {
+    $scope.value = "bar";
+  }]);
