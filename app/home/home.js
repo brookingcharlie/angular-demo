@@ -8,7 +8,7 @@ angular
     $routeProvider
       .when('/', {
         controller: 'HomeController',
-        controllerAs: 'controller',
+        controllerAs: 'ctrl',
         templateUrl: 'home/home.html'
       });
   }]);

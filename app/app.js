@@ -5,7 +5,7 @@ angular
     'ngRoute',
     'app.home',
     'app.about',
-    'app.helloworld',
+    'app.echo',
     'app.navbar',
     'app.tabs'
   ])

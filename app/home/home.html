@@ -1,9 +1,18 @@
+<h1>Controller scope binding</h1>
 <p>
-  Controller has value "{{controller.value}}".
+  Controller has value "{{ctrl.value1}}".
 </p>
-<p> 
-  <app-hello-world one-way-value="{{controller.value}}" two-way-value="controller.value"></app-hello-world>
+<p>
+  Edit the value: <input ng-model="ctrl.value1" />
 </p>
+<h1>Directive scope binding</h1>
+<p>
+  Two-way binding: <app-echo-two value="ctrl.value2"></app-echo-two>
+</p>
+<p>
+  One-way binding: <app-echo-one value="{{ctrl.value2}}"></app-echo-one>
+</p>
+<h1>Inter-directive communication</h1>
 <app-tabs>
   <app-tab title="Alpha">
     <p>First tab</p>
