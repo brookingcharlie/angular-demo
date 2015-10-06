@@ -5,18 +5,13 @@ angular
   .directive('appTab', [function() {
     return {
       restrict: 'E',
-      scope: {
-        id: '@tabId',
-        title: '@'
-      },
+      scope: {},
       require: '^appTabs',
       transclude: true,
-      replace: true,
-      template:
-        '<div role="tabpanel" class="tab-pane" id="{{id}}" ng-transclude>\n' +
-        '</div>',
+      template: '<div class="tab-pane" ng-show="tab.active" ng-transclude></div>',
       link: function(scope, element, attrs, tabs) {
-        tabs.addTab({id: scope.id, title: scope.title});
+        scope.tab = {title: attrs.title, active: false};
+        tabs.addTab(scope.tab);
       }
     };
   }]);
