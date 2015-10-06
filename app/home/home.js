@@ -2,7 +2,10 @@
 
 angular
   .module('app.home', [
-    'ngRoute'
+    'ngRoute',
+    'app.echo',
+    'app.navbar',
+    'app.tabs'
   ])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider

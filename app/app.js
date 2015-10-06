@@ -4,10 +4,7 @@ angular
   .module('app', [
     'ngRoute',
     'app.home',
-    'app.about',
-    'app.echo',
-    'app.navbar',
-    'app.tabs'
+    'app.about'
   ])
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.otherwise({redirectTo: '/'});
